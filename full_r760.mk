@@ -20,7 +20,6 @@
 #
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/r760/r760.mk)
 
@@ -31,6 +30,3 @@ PRODUCT_DEVICE := r760
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SCH-R760
-
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCH-R760 TARGET_DEVICE=SCH-R760 BUILD_FINGERPRINT=samsung/SCH-R760/SCH-R760:2.3.6/GINGERBREAD/FF18:user/release-keys  PRIVATE_BUILD_DESC="SCH-R760-user 2.3.6 GINGERBREAD FF18 release-keys"
-
