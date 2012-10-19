@@ -59,6 +59,5 @@ TARGET_OTA_ASSERT_DEVICE := epic4gtouch,SPH-D710,d710,SCH-R760,r760
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/galaxys2-common/BoardConfigVendor.mk
 -include vendor/samsung/d710/BoardConfigVendor.mk
--include vendor/samsung/r760/BoardConfigVendor.mk
 
 BOARD_CUSTOM_BOOTIMG_MK := device/samsung/r760/shbootimg.mk

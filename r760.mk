@@ -13,9 +13,7 @@
 # limitations under the License.
 
 DEVICE_PACKAGE_OVERLAYS := device/samsung/r760/overlay \
-    device/samsung/d710/overlay \
     device/samsung/galaxys2-common/overlay
-
 
 # Misc	
 PRODUCT_COPY_FILES += \
@@ -25,7 +23,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=4 \
     ro.cdma.home.operator.numeric=311220 \
-    ro.cdma.home.operator.alpha=USCC \
+    ro.cdma.home.operator.alpha=U.S Cellular \
     net.cdma.pppd.authtype=require-chap \
     net.cdma.pppd.user=user[SPACE]USCC \
     net.cdma.datalinkinterface=/dev/ttyCDMA0 \
@@ -35,7 +33,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mobiledata.interfaces=ppp0 \
     ro.telephony.ril_class=SamsungCDMAv6RIL \
     ro.ril.samsung_cdma=true \
-    ro.carrier=USCC	
+    ro.carrier=U.S Cellular	
 
 $(call inherit-product, device/samsung/d710/d710.mk)
 $(call inherit-product, device/samsung/galaxys2-common/common.mk)
